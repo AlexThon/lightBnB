@@ -25,7 +25,7 @@ CREATE TABLE properties (
   number_of_bedrooms INTEGER,
   
   country VARCHAR(255),
-  provence VARCHAR(255),
+  province VARCHAR(255),
   city VARCHAR(255),
   street VARCHAR(255),
   post_code VARCHAR(255),

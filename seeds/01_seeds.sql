@@ -1,26 +1,34 @@
+
 INSERT INTO users (id, name, email, password)
-VALUES 
-  (1,'Majok','majok@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u'),
-  (2,'Kuir','kuir@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u'),
-  (3,'Ador','ador@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u'),
-  (4,'Yom','yom12@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u'),
-  (5,'Kuir','kuir@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u'),
-  (5,'Kuir','kuir@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u');
+VALUES (1,'Majok','majok@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u');
+
+INSERT INTO users (id, name, email, password)
+VALUES (2,'Kur','kur@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u');
+INSERT INTO users (id, name, email, password)
+VALUES (3,'Ador','ador@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u');
+
+INSERT INTO users (id, name, email, password)
+VALUES (4,'Yom','yom12@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u');
+
+INSERT INTO users (id, name, email, password)
+VALUES (5,'Kuor','kuor@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u');
+INSERT INTO users (id, name, email, password)
+VALUES (6,'John','johnk@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u');
 
 INSERT INTO properties (
   id, owner_id, title, description, thumbnail_photo_url, 
   cover_photo_url, cost_per_night, parking_spaces, number_of_bathrooms,
-  number_of_bedrooms, country, provence, city, street, post_code, active
+  number_of_bedrooms, country, province, city, street, post_code, active
 ) 
 VALUES (1,2,'Thongpiny', 'desc', ' https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg?auto=compress&cs=tinysrgb&h=350', 500,
 4, 5, 8, 'South Sudan','Equatoria', 'Juba', '16 El Malakia Road', 'Nw 34', true
 ),
 
-VALUES (2,1,'Pakuwa', 'desc', ' https://images.pexels.com/photos/2080018/pexels-photo-2080018.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2080018/pexels-photo-2080018.jpeg', 450,
+(2,1,'Pakuwa', 'desc', ' https://images.pexels.com/photos/2080018/pexels-photo-2080018.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2080018/pexels-photo-2080018.jpeg', 450,
 2, 4, 5, 'South Sudan','Jonglei', 'Bor', '26 Heroes corner', 'BR 7', true
 ),
 
-VALUES (3,1,'Baidit', 'desc', ' https://unsplash.com/photos/7MXH1282qaM', 'https://images.unsplash.com/photo-1599397092923-ed8e8edfb8fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80', 300,
+ (3,1,'Baidit', 'desc', ' https://unsplash.com/photos/7MXH1282qaM', 'https://images.unsplash.com/photo-1599397092923-ed8e8edfb8fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80', 300,
 2, 4, 5, 'South Sudan','Jonglei', 'Bor', '26 Heroes corner', 'BR 7', true
 );
 
@@ -51,5 +59,4 @@ INSERT INTO property_reviews (
 VALUES
   (1, 1, 2, 1, 7, 'GOOD!'),
   (2, 2, 3, 2, 10, 'GREAT!'),
-  (3, 3, 1, 3, 6, 'OKAY!'),
-  (4, 2, 2, 4, 10,'EXCELLENT!');
+  (3, 3, 1, 3, 6, 'OKAY!');
